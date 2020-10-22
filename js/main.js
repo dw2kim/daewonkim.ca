@@ -85,14 +85,16 @@
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
-	    loop:true,
-	    autoplay: true,
+	    loop:false,
+	    autoplay: false,
 	    margin:0,
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
-	    nav:false,
-	    autoplayHoverPause: false,
-	    items: 1,
+	    nav:true,
+	    autoplayHoverPause: true,
+	    items: 0,
+		touchDrag  : false,
+		mouseDrag  : false,
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
 	      0:{
